@@ -3,6 +3,10 @@ import './App.css'
 
 import {PrimaryButton} from './Card.js'
 import PrimaryList from './List.js'
+import Connection from './Co.js'
+import List, { Family }from './mapList.js'
+
+
 
 class App extends Component {
   render() {
@@ -14,7 +18,10 @@ class App extends Component {
         <PrimaryButton />
 
         <PrimaryList />
-      </div>
+        <Connection  />
+
+        <List />
+        </div>
       )
   }
 }
