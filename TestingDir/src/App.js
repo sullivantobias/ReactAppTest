@@ -7,7 +7,7 @@ import Connection from './Co.js'
 import List, { Family } from './mapList.js'
 import Texting from './DefaultTest.js'
 import Addition from './addition.js'
-
+import DefaultInput from './testLifeCycle.js'
 
 class App extends Component {
 
@@ -32,6 +32,12 @@ class App extends Component {
 
         <Texting el={1} text="First Text" onClick = {this.showedElement} />
         <Texting el={2} text="Second Text" onClick = {this.showedElement} />
+
+        <DefaultInput numberToAdd={3}/>
+
+        <DefaultInput />
+
+
 
         </div>
       )
