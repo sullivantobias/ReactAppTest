@@ -12,14 +12,24 @@ class inputNumber extends Component {
     this.numberToAdd = numberToAdd
   }
 
+  static defaultProps = {
+    numberToAdd: 10
+  }
+
+  static propTypes = {
+    number: PropTypes.number.isRequired
+  }
+
   render () {
+    const { number } = this.state
+    const {numberToAdd} = this.props
     return(
     <div>
-      <button onClick = {() => this.componentWillReceiveProps()}>Increment from {this.numberToAdd}</button>
+      <button onClick = {() => this.componentWillReceiveProps()}>Increment from {numberToAdd}</button>
       <br/>
-      <span>{this.state.number}</span>
+      <span>{number}</span>
     </div>
-  )
+   )
   }
 
   componentWillReceiveProps () {
@@ -29,12 +39,5 @@ class inputNumber extends Component {
   }
 }
 
-inputNumber.defaultProps = {
-  numberToAdd: 10
-}
-
-inputNumber.propTypes = {
-  numberToAdd: PropTypes.number.isRequired
-};
 
 export default inputNumber
