@@ -6,7 +6,7 @@ class List extends React.Component {
   }
 
   loops() {
-    let indents = [];
+	let indents = [];
     for (let i = 0; i < 10; i++) {
       indents.push(<li key={i}>{i}</li>);
     }

@@ -1,0 +1,15 @@
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+input {
+  width: 300px;
+}
+
+.areaCentered {
+  text-align: center;
+}

@@ -8,11 +8,13 @@ import List, { Family } from "./mapList.js";
 import Texting from "./DefaultTest.js";
 import Addition from "./addition.js";
 import DefaultInput from "./testLifeCycle.js";
+import ShowColor from "./showColor.js";
 
 class App extends Component {
   showedElement = element => {
     console.log(element, this);
   };
+
   render() {
     return (
       <div>
@@ -35,6 +37,8 @@ class App extends Component {
         <DefaultInput numberToAdd={3} />
 
         <DefaultInput />
+
+        <ShowColor />
       </div>
     );
   }
